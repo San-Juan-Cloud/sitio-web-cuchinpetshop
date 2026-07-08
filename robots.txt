@@ -1,0 +1,5 @@
+# Reemplazar DOMINIO-AQUI.com.ar por el dominio real al publicar (mismo placeholder que index.html y sitemap.xml).
+User-agent: *
+Allow: /
+
+Sitemap: https://DOMINIO-AQUI.com.ar/sitemap.xml

@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO local: title (~60c) y description (~155c) apuntando a "petshop pocito/san juan", "acuarismo/peces san juan" y "alimento balanceado pocito" -->
+<title>Cuchín Pet Shop | Petshop en San Juan – Acuarismo</title>
+<meta name="description" content="Petshop en Pocito, San Juan: alimentos balanceados, accesorios, granja, peces y acuarismo con asesoramiento técnico. Envíos a domicilio. ¡Consultanos!">
+<meta name="theme-color" content="#EE6278">
+<meta name="robots" content="index, follow">
+
+<!-- TODO: reemplazar DOMINIO-AQUI.com.ar por el dominio real al publicar (canonical, OG, sitemap y robots.txt usan el mismo placeholder). -->
+<link rel="canonical" href="https://DOMINIO-AQUI.com.ar/">
+
+<!-- Favicon (generado a partir del ícono del logo, assets/logo.png) -->
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Cuchín Pet Shop">
+<meta property="og:title" content="Cuchín Pet Shop | Petshop en Pocito, San Juan">
+<meta property="og:description" content="Alimentos balanceados, accesorios, granja, peces y acuarismo con asesoramiento técnico en Pocito, San Juan. Envíos a domicilio.">
+<meta property="og:url" content="https://DOMINIO-AQUI.com.ar/">
+<meta property="og:image" content="https://DOMINIO-AQUI.com.ar/assets/logo.png">
+<meta property="og:image:width" content="720">
+<meta property="og:image:height" content="256">
+<meta property="og:image:alt" content="Logo de Cuchín Pet Shop">
+<meta property="og:locale" content="es_AR">
+<meta property="business:contact_data:street_address" content="Vidart y Calle 6">
+<meta property="business:contact_data:locality" content="Pocito">
+<meta property="business:contact_data:region" content="San Juan">
+<meta property="business:contact_data:postal_code" content="J5427">
+<meta property="business:contact_data:country_name" content="Argentina">
+
+<!-- Twitter Card: "summary" porque hoy el único og:image es el isologo (720x256).
+     Si más adelante se suma una foto real 1200x630 (ver assets/img/README.md), cambiar
+     og:image/twitter:image a esa foto y este card a "summary_large_image". -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cuchín Pet Shop | Petshop en Pocito, San Juan">
+<meta name="twitter:description" content="Alimentos balanceados, accesorios, granja, peces y acuarismo con asesoramiento técnico en Pocito, San Juan. Envíos a domicilio.">
+<meta name="twitter:image" content="https://DOMINIO-AQUI.com.ar/assets/logo.png">
+<meta name="twitter:image:alt" content="Logo de Cuchín Pet Shop">
+
+<!-- Tipografía: par "Soft Rounded" (Varela Round + Nunito Sans) — design-system/MASTER.md #2 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- Íconos: Phosphor Icons (fill/duotone), según design-system/MASTER.md #3. defer: son decorativos, no deben bloquear el render inicial. -->
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="main.js"></script>
+
+<link rel="stylesheet" href="styles.css">
+
+<!-- Datos estructurados schema.org: reemplazar DOMINIO-AQUI.com.ar al publicar. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PetStore",
+  "@id": "https://DOMINIO-AQUI.com.ar/",
+  "name": "Cuchín Pet Shop",
+  "image": "https://DOMINIO-AQUI.com.ar/assets/logo.png",
+  "url": "https://DOMINIO-AQUI.com.ar/",
+  "telephone": "+542646287887",
+  "priceRange": "$-$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vidart y Calle 6",
+    "addressLocality": "Pocito",
+    "addressRegion": "San Juan",
+    "postalCode": "J5427",
+    "addressCountry": "AR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -31.5932,
+    "longitude": -68.5682
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "13:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "17:30",
+      "closes": "21:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "17:30",
+      "closes": "21:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "20",
+    "bestRating": "5"
+  },
+  "sameAs": [
+    "https://www.instagram.com/cuchinpetshop/",
+    "https://www.facebook.com/cuchinpetshop/"
+  ]
+}
+</script>
+</head>
+
+<body class="bg-white text-ink antialiased">
+
+<a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:z-[100] focus:bg-white focus:text-coral-700 focus:font-bold focus:px-4 focus:py-2 focus:rounded-full focus:shadow-soft-lg">
+  Saltar al contenido principal
+</a>
+
+<!-- ============ HEADER ============ -->
+<header class="fixed top-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-b border-coral-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+    <a href="#inicio" class="flex items-center gap-2 shrink-0">
+      <img src="assets/logo.png" alt="Cuchín Pet Shop - Petshop en Pocito, San Juan" class="h-10 w-auto">
+    </a>
+
+    <nav aria-label="Navegación principal" class="hidden md:flex items-center gap-6 font-semibold text-sm">
+      <a href="#categorias" class="hover:text-coral-600 transition-colors duration-200">Categorías</a>
+      <a href="#acuarismo" class="hover:text-coral-600 transition-colors duration-200">Acuarismo</a>
+      <a href="#nosotros" class="hover:text-coral-600 transition-colors duration-200">Nosotros</a>
+      <a href="#testimonios" class="hover:text-coral-600 transition-colors duration-200">Opiniones</a>
+      <a href="#ubicacion" class="hover:text-coral-600 transition-colors duration-200">Ubicación</a>
+      <a href="#contacto" class="hover:text-coral-600 transition-colors duration-200">Contacto</a>
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+         class="hidden sm:inline-flex items-center gap-2 bg-coral-600 hover:bg-coral-700 text-white font-bold text-sm px-4 py-2.5 rounded-full shadow-soft-sm transition-all duration-200 cursor-pointer min-h-[44px]">
+        <i class="ph-fill ph-whatsapp-logo text-lg" aria-hidden="true"></i>
+        WhatsApp
+      </a>
+
+      <button type="button" id="menu-btn" aria-expanded="false" aria-controls="mobile-menu"
+              class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-full text-coral-700 hover:bg-coral-50 transition-colors duration-200 cursor-pointer">
+        <i class="ph ph-list text-2xl" id="menu-icon-open" aria-hidden="true"></i>
+        <i class="ph ph-x text-2xl hidden" id="menu-icon-close" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menú</span>
+      </button>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" aria-label="Navegación móvil" class="hidden md:hidden border-t border-coral-100 bg-white px-4 py-3 flex flex-col gap-1 font-semibold text-base">
+    <a href="#categorias" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Categorías</a>
+    <a href="#acuarismo" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Acuarismo</a>
+    <a href="#nosotros" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Nosotros</a>
+    <a href="#testimonios" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Opiniones</a>
+    <a href="#ubicacion" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Ubicación</a>
+    <a href="#contacto" class="px-2 py-3 rounded-lg hover:bg-coral-50 transition-colors duration-200">Contacto</a>
+    <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+       class="mt-2 inline-flex items-center justify-center gap-2 bg-coral-600 text-white font-bold px-4 py-3 rounded-full min-h-[44px]">
+      <i class="ph-fill ph-whatsapp-logo text-lg" aria-hidden="true"></i> Escribinos por WhatsApp
+    </a>
+  </nav>
+</header>
+
+<main id="contenido">
+
+  <!-- ============ HERO ============ -->
+  <section id="inicio" class="pt-28 pb-16 sm:pt-36 sm:pb-24 bg-gradient-to-br from-coral-50 via-white to-turquoise-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <div>
+        <span class="inline-flex items-center gap-2 bg-white border border-coral-100 text-coral-700 font-bold text-sm px-4 py-2 rounded-full shadow-soft-sm mb-6">
+          <i class="ph-fill ph-star text-lime-600 text-base" aria-hidden="true"></i>
+          4.9★ en Google · 20 reseñas
+        </span>
+
+        <h1 class="font-heading text-4xl sm:text-5xl leading-tight text-ink mb-4">
+          Cuchin Petshop: todo para tu mascota, con asesoramiento personalizado
+        </h1>
+        <p class="text-lg text-ink-muted mb-8 max-w-xl">
+          Desde 2020 acompañamos a las familias de la zona: perros, gatos,
+          animales de granja, acuarismo y mascotas exóticas, con +35 proveedores y
+          precios para todos los bolsillos.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+             class="inline-flex items-center justify-center gap-2 bg-coral-600 hover:bg-coral-700 text-white font-bold px-7 py-3.5 rounded-full shadow-soft-md hover:shadow-soft-lg transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[44px]">
+            <i class="ph-fill ph-whatsapp-logo text-xl" aria-hidden="true"></i>
+            Consultar por WhatsApp
+          </a>
+          <a href="#categorias"
+             class="inline-flex items-center justify-center gap-2 border-2 border-turquoise-800 text-turquoise-800 hover:bg-turquoise-50 font-bold px-7 py-3.5 rounded-full transition-colors duration-200 cursor-pointer min-h-[44px]">
+            Ver categorías
+            <i class="ph ph-arrow-down text-lg" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- FOTO: hero-mascotas.jpg — recomendado 1200x900px (4:3).
+           Sugerencia: perro y gato juntos, en el local o con luz natural. -->
+      <div class="photo-slot rounded-3xl shadow-soft-lg aspect-[4/3] w-full">
+        <div class="photo-slot__placeholder">
+          <i class="ph-duotone ph-paw-print text-6xl text-coral-400" aria-hidden="true"></i>
+          <p class="font-heading text-coral-700">Foto próximamente</p>
+        </div>
+        <!-- Descomentar cuando exista assets/img/hero-mascotas.jpg:
+        <img class="photo-slot__img" fetchpriority="high"
+             src="assets/img/hero-mascotas.jpg"
+             alt="Perro y gato en Cuchín Pet Shop, petshop en Pocito, San Juan"
+             onerror="this.style.display='none'"> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORÍAS ============ -->
+  <section id="categorias" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-3">Nuestras categorías</h2>
+        <p class="text-ink-muted text-lg">Encontrá lo que tu mascota necesita en nuestro petshop.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Perros y Gatos -->
+        <a href="https://wa.me/542646287887?text=Hola%21%20Quiero%20consultar%20sobre%20productos%20para%20perros%20y%20gatos."
+           class="group block bg-white border border-coral-100 rounded-2xl overflow-hidden shadow-soft-sm hover:shadow-soft-md transition-all duration-200 hover:-translate-y-1 cursor-pointer">
+          <!-- FOTO: perros-gatos.jpg — recomendado 800x600px (4:3). Estantería de balanceados o mascota con accesorio. -->
+          <div class="photo-slot aspect-[4/3]">
+            <div class="photo-slot__placeholder">
+              <i class="ph-duotone ph-dog text-5xl text-coral-400" aria-hidden="true"></i>
+            </div>
+            <!-- Descomentar cuando exista assets/img/perros-gatos.jpg:
+            <img class="photo-slot__img" loading="lazy" src="assets/img/perros-gatos.jpg"
+                 alt="Alimentos balanceados y accesorios para perros y gatos en Pocito, San Juan" onerror="this.style.display='none'"> -->
+          </div>
+          <div class="p-5">
+            <span class="inline-flex items-center gap-1.5 bg-coral-50 text-coral-700 text-xs font-bold px-3 py-1 rounded-full mb-2">
+              <i class="ph-fill ph-paw-print" aria-hidden="true"></i> Perros y Gatos
+            </span>
+            <h3 class="font-heading text-xl text-ink mb-1">Perros y Gatos</h3>
+            <p class="text-sm text-ink-muted">Alimentos balanceados de las mismas marcas que en la veterinaria, y accesorios para todas las edades y razas.</p>
+          </div>
+        </a>
+
+        <!-- Granja -->
+        <a href="https://wa.me/542646287887?text=Hola%21%20Quiero%20consultar%20sobre%20productos%20para%20animales%20de%20granja."
+           class="group block bg-white border border-lime-100 rounded-2xl overflow-hidden shadow-soft-sm hover:shadow-soft-md transition-all duration-200 hover:-translate-y-1 cursor-pointer">
+          <!-- FOTO: granja.jpg — recomendado 800x600px (4:3). Aves, conejos o insumos de granja en el local. -->
+          <div class="photo-slot aspect-[4/3]">
+            <div class="photo-slot__placeholder">
+              <i class="ph-duotone ph-horse text-5xl text-lime-600" aria-hidden="true"></i>
+            </div>
+            <!-- Descomentar cuando exista assets/img/granja.jpg:
+            <img class="photo-slot__img" loading="lazy" src="assets/img/granja.jpg"
+                 alt="Productos para animales de granja en Pocito, San Juan" onerror="this.style.display='none'"> -->
+          </div>
+          <div class="p-5">
+            <span class="inline-flex items-center gap-1.5 bg-lime-50 text-lime-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+              <i class="ph-fill ph-horse" aria-hidden="true"></i> Granja
+            </span>
+            <h3 class="font-heading text-xl text-ink mb-1">Animales de Granja</h3>
+            <p class="text-sm text-ink-muted">Aves, cerdos, conejos y caballos: insumos para tu producción.</p>
+          </div>
+        </a>
+
+        <!-- Acuarismo -->
+        <a href="#acuarismo"
+           class="group block bg-white border border-turquoise-100 rounded-2xl overflow-hidden shadow-soft-sm hover:shadow-soft-md transition-all duration-200 hover:-translate-y-1 cursor-pointer">
+          <!-- FOTO: acuarismo.jpg — recomendado 800x600px (4:3). Acuario armado o pared de peceras del local. -->
+          <div class="photo-slot aspect-[4/3]">
+            <div class="photo-slot__placeholder">
+              <i class="ph-duotone ph-fish-simple text-5xl text-turquoise-600" aria-hidden="true"></i>
+            </div>
+            <!-- Descomentar cuando exista assets/img/acuarismo.jpg:
+            <img class="photo-slot__img" loading="lazy" src="assets/img/acuarismo.jpg"
+                 alt="Peces y acuarios: acuarismo en San Juan" onerror="this.style.display='none'"> -->
+          </div>
+          <div class="p-5">
+            <span class="inline-flex items-center gap-1.5 bg-turquoise-50 text-turquoise-800 text-xs font-bold px-3 py-1 rounded-full mb-2">
+              <i class="ph-fill ph-fish-simple" aria-hidden="true"></i> Acuarismo
+            </span>
+            <h3 class="font-heading text-xl text-ink mb-1">Acuarismo</h3>
+            <p class="text-sm text-ink-muted">Peces de agua fría y tropicales, con accesorios y asesoramiento técnico.</p>
+          </div>
+        </a>
+
+        <!-- Exóticas -->
+        <a href="https://wa.me/542646287887?text=Hola%21%20Quiero%20consultar%20sobre%20insumos%20para%20mascotas%20ex%C3%B3ticas%20%28h%C3%A1msters%2C%20tortugas%2C%20cuyis%29."
+           class="group block bg-white border border-turquoise-100 rounded-2xl overflow-hidden shadow-soft-sm hover:shadow-soft-md transition-all duration-200 hover:-translate-y-1 cursor-pointer">
+          <!-- FOTO: exoticas.jpg — recomendado 800x600px (4:3). Hámster, tortuga o cuyo en su hábitat. -->
+          <div class="photo-slot aspect-[4/3]">
+            <div class="photo-slot__placeholder">
+              <i class="ph-duotone ph-rabbit text-5xl text-turquoise-600" aria-hidden="true"></i>
+            </div>
+            <!-- Descomentar cuando exista assets/img/exoticas.jpg:
+            <img class="photo-slot__img" loading="lazy" src="assets/img/exoticas.jpg"
+                 alt="Insumos para mascotas exóticas en Pocito: hámsters, tortugas y cuyis" onerror="this.style.display='none'"> -->
+          </div>
+          <div class="p-5">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full mb-2 bg-gradient-to-r from-turquoise-50 to-lime-50 text-turquoise-800">
+              <i class="ph-fill ph-rabbit" aria-hidden="true"></i> No tradicionales
+            </span>
+            <h3 class="font-heading text-xl text-ink mb-1">Mascotas Exóticas</h3>
+            <p class="text-sm text-ink-muted">Hámsters, tortugas y cuyis: todo lo necesario para cuidarlos.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACUARISMO DESTACADO ============ -->
+  <section id="acuarismo" class="py-16 sm:py-24 bg-turquoise-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+      <!-- FOTO: acuarismo.jpg — recomendado 1200x900px (4:3) en este tamaño grande. Acuario armado o pared de peceras del local. -->
+      <div class="photo-slot rounded-3xl shadow-soft-lg aspect-[4/3] w-full order-2 lg:order-1">
+        <div class="photo-slot__placeholder" style="background: linear-gradient(135deg, #E3F5F7 0%, #C8EBEF 55%, #F1F7E4 100%); color:#236F76;">
+          <i class="ph-duotone ph-fish-simple text-6xl text-turquoise-600" aria-hidden="true"></i>
+          <p class="font-heading text-turquoise-800">Foto próximamente</p>
+        </div>
+        <!-- Descomentar cuando exista assets/img/acuarismo.jpg (foto grande, 1200x900px):
+        <img class="photo-slot__img" loading="lazy" src="assets/img/acuarismo.jpg"
+             alt="Acuario con peces tropicales en Cuchín Pet Shop, San Juan" onerror="this.style.display='none'"> -->
+      </div>
+
+      <div class="order-1 lg:order-2">
+        <span class="inline-flex items-center gap-2 bg-white text-turquoise-800 font-bold text-sm px-4 py-2 rounded-full shadow-soft-sm mb-6">
+          <i class="ph-fill ph-fish-simple text-lg" aria-hidden="true"></i>
+          Acuarismo en San Juan
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-4">Peces y asesoramiento técnico para tu acuario</h2>
+        <p class="text-lg text-ink-muted mb-6">
+          Vendemos peces de agua fría y tropicales, y además te ayudamos a armar y
+          mantener tu acuario con los accesorios que necesites.
+        </p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3">
+            <i class="ph-fill ph-check-circle text-turquoise-700 text-xl shrink-0 mt-0.5" aria-hidden="true"></i>
+            <span>Peces de agua fría y tropicales</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="ph-fill ph-check-circle text-turquoise-700 text-xl shrink-0 mt-0.5" aria-hidden="true"></i>
+            <span>Asesoramiento para armar tu acuario desde cero</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="ph-fill ph-check-circle text-turquoise-700 text-xl shrink-0 mt-0.5" aria-hidden="true"></i>
+            <span>Seguimiento y consejos de mantenimiento</span>
+          </li>
+        </ul>
+        <a href="https://wa.me/542646287887?text=Hola%21%20Quiero%20asesoramiento%20sobre%20acuarismo."
+           class="inline-flex items-center justify-center gap-2 bg-turquoise-800 hover:bg-turquoise-900 text-white font-bold px-7 py-3.5 rounded-full shadow-soft-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[44px]">
+          <i class="ph-fill ph-whatsapp-logo text-xl" aria-hidden="true"></i>
+          Consultar sobre acuarismo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ POR QUÉ ELEGIRNOS ============ -->
+  <section id="nosotros" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-3">¿Por qué elegirnos?</h2>
+        <p class="text-ink-muted text-lg">Desde 2020, tu petshop de confianza.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white border border-coral-100 rounded-2xl p-6 shadow-soft-sm">
+          <div class="w-12 h-12 rounded-full bg-coral-50 flex items-center justify-center mb-4">
+            <i class="ph-fill ph-shield-check text-2xl text-coral-600" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg text-ink mb-1">Asesoramiento técnico</h3>
+          <p class="text-sm text-ink-muted">Te acompañamos para elegir lo mejor para tu mascota o producción.</p>
+        </div>
+
+        <div class="bg-white border border-turquoise-100 rounded-2xl p-6 shadow-soft-sm">
+          <div class="w-12 h-12 rounded-full bg-turquoise-50 flex items-center justify-center mb-4">
+            <i class="ph-fill ph-handshake text-2xl text-turquoise-700" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg text-ink mb-1">+35 proveedores</h3>
+          <p class="text-sm text-ink-muted">Amplia variedad de marcas para encontrar siempre lo que buscás.</p>
+        </div>
+
+        <div class="bg-white border border-lime-100 rounded-2xl p-6 shadow-soft-sm">
+          <div class="w-12 h-12 rounded-full bg-lime-50 flex items-center justify-center mb-4">
+            <i class="ph-fill ph-tag text-2xl text-lime-700" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg text-ink mb-1">Precios para todos los bolsillos</h3>
+          <p class="text-sm text-ink-muted">Opciones en distintas gamas de precio, sin resignar calidad.</p>
+        </div>
+
+        <div class="bg-white border border-coral-100 rounded-2xl p-6 shadow-soft-sm">
+          <div class="w-12 h-12 rounded-full bg-coral-50 flex items-center justify-center mb-4">
+            <i class="ph-fill ph-users-three text-2xl text-coral-600" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg text-ink mb-1">Atención personalizada</h3>
+          <p class="text-sm text-ink-muted">Trato cercano y de confianza desde 2020.</p>
+        </div>
+
+        <div class="bg-white border border-turquoise-100 rounded-2xl p-6 shadow-soft-sm">
+          <div class="w-12 h-12 rounded-full bg-turquoise-50 flex items-center justify-center mb-4">
+            <i class="ph-fill ph-truck text-2xl text-turquoise-700" aria-hidden="true"></i>
+          </div>
+          <h3 class="font-heading text-lg text-ink mb-1">Envíos a domicilio</h3>
+          <p class="text-sm text-ink-muted">Hacemos envíos a domicilio en la zona, sin que tengas que trasladarte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANDA DIVISORIA ============ -->
+  <!-- FOTO: local-interior.jpg — recomendado 1600x900px (16:9). Interior del local, idealmente con un cliente siendo atendido. -->
+  <section class="photo-slot aspect-[21/9] sm:aspect-[21/7]">
+    <div class="photo-slot__placeholder" style="background: linear-gradient(120deg, #FCDFE3 0%, #E3F5F7 50%, #F1F7E4 100%);">
+      <p class="font-heading text-xl sm:text-2xl text-coral-700 max-w-lg">
+        Más de 5 años acompañando a las familias de Pocito
+      </p>
+    </div>
+    <!-- Descomentar cuando exista assets/img/local-interior.jpg:
+    <img class="photo-slot__img" loading="lazy" src="assets/img/local-interior.jpg"
+         alt="Interior del local de Cuchín Pet Shop en Pocito, San Juan" onerror="this.style.display='none'"> -->
+  </section>
+
+  <!-- ============ TESTIMONIOS ============ -->
+  <section id="testimonios" class="py-16 sm:py-24 bg-coral-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="inline-flex items-center gap-2 bg-white text-coral-700 font-bold text-sm px-4 py-2 rounded-full shadow-soft-sm mb-4">
+          <i class="ph-fill ph-star text-lime-600" aria-hidden="true"></i>
+          4.9★ en Google · 20 reseñas
+        </span>
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-3">Lo que dicen nuestros clientes</h2>
+      </div>
+
+      <!--
+        PENDIENTE: reemplazar las 3 tarjetas de abajo con el texto real de 2-3 reseñas
+        de Google Maps (autor + comentario). Quedan marcadas explícitamente como
+        placeholder para no publicar citas inventadas atribuidas a clientes reales.
+      -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-6 shadow-soft-sm border-2 border-dashed border-coral-200">
+          <div class="flex gap-1 mb-3 text-lime-600" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="text-ink-muted italic mb-4">
+            Muy buenos precios, y unos genios los chicos.
+          </p>
+          <p class="font-bold text-ink text-sm">— T.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-soft-sm border-2 border-dashed border-coral-200">
+          <div class="flex gap-1 mb-3 text-lime-600" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="text-ink-muted italic mb-4">
+            Excelente su atención, tanto personal como en línea. Muy acertado sus consejos y excelente calidad de sus productos.
+          </p>
+          <p class="font-bold text-ink text-sm">— M.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 shadow-soft-sm border-2 border-dashed border-coral-200 sm:col-span-2 lg:col-span-1">
+          <div class="flex gap-1 mb-3 text-lime-600" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="text-ink-muted italic mb-4">
+            Excelente atención,buenos precios, muy completo el lugar!
+          </p>
+          <p class="font-bold text-ink text-sm">— Y. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UBICACIÓN Y HORARIOS ============ -->
+  <section id="ubicacion" class="py-16 sm:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-10 lg:gap-16">
+      <div>
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-6">Ubicación y horarios</h2>
+
+        <div class="flex items-start gap-3 mb-6">
+          <i class="ph-fill ph-map-pin text-2xl text-coral-600 shrink-0" aria-hidden="true"></i>
+          <div>
+            <p class="font-bold text-ink">Vidart y Calle 6, Pocito, San Juan, Argentina</p>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=-31.5932,-68.5682"
+               class="text-turquoise-800 font-semibold text-sm hover:underline cursor-pointer">
+              Cómo llegar →
+            </a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3 mb-8">
+          <i class="ph-fill ph-clock text-2xl text-coral-600 shrink-0" aria-hidden="true"></i>
+          <table class="text-sm">
+            <tbody>
+              <tr><td class="font-bold text-ink pr-3 py-0.5">Lunes a viernes</td><td class="text-ink-muted py-0.5">9:00–13:30 y 17:30–21:30</td></tr>
+              <tr><td class="font-bold text-ink pr-3 py-0.5">Sábados</td><td class="text-ink-muted py-0.5">9:00–14:00 y 17:30–21:00</td></tr>
+              <tr><td class="font-bold text-ink pr-3 py-0.5">Domingos</td><td class="text-ink-muted py-0.5">Cerrado</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- FOTO: local-frente.jpg — recomendado 800x600px (4:3). Frente del local en Vidart y Calle 6. -->
+        <div class="photo-slot rounded-2xl shadow-soft-sm aspect-[4/3] w-full max-w-sm mb-8">
+          <div class="photo-slot__placeholder">
+            <i class="ph-duotone ph-storefront text-5xl text-coral-400" aria-hidden="true"></i>
+            <p class="font-heading text-coral-700 text-sm">Foto próximamente</p>
+          </div>
+          <!-- Descomentar cuando exista assets/img/local-frente.jpg:
+          <img class="photo-slot__img" loading="lazy" src="assets/img/local-frente.jpg"
+               alt="Local de Cuchín Pet Shop en Vidart y Calle 6, Pocito, San Juan" onerror="this.style.display='none'"> -->
+        </div>
+
+        <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+           class="inline-flex items-center justify-center gap-2 bg-coral-600 hover:bg-coral-700 text-white font-bold px-7 py-3.5 rounded-full shadow-soft-md transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[44px]">
+          <i class="ph-fill ph-whatsapp-logo text-xl" aria-hidden="true"></i>
+          Escribinos por WhatsApp
+        </a>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden shadow-soft-lg aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px]">
+        <iframe
+          src="https://www.google.com/maps?q=-31.5932,-68.5682&z=16&output=embed"
+          title="Mapa de ubicación de Cuchín Pet Shop en Pocito, San Juan"
+          class="w-full h-full border-0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contacto" class="py-16 sm:py-24 bg-turquoise-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-10">
+        <h2 class="font-heading text-3xl sm:text-4xl text-ink mb-3">¿Tenés alguna consulta?</h2>
+        <p class="text-ink-muted text-lg">
+          Completá el formulario y te respondemos a la brevedad, o escribinos directo por
+          <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+             class="text-turquoise-800 font-bold hover:underline cursor-pointer">WhatsApp</a>.
+        </p>
+      </div>
+
+      <form id="contact-form" novalidate class="bg-white rounded-3xl shadow-soft-md p-6 sm:p-10">
+
+        <!-- Honeypot anti-spam: oculto visualmente y para lectores de pantalla; si un bot lo completa, se descarta el envío. -->
+        <div class="sr-only" aria-hidden="true">
+          <label for="field-website">No completar este campo</label>
+          <input type="text" id="field-website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div>
+            <label for="field-name" class="block text-sm font-bold text-ink mb-1.5">
+              Nombre completo <span class="text-coral-600">*</span>
+            </label>
+            <input type="text" id="field-name" name="name" required autocomplete="name"
+                   aria-describedby="error-name"
+                   class="w-full min-h-[44px] px-4 py-3 rounded-xl border border-coral-100 text-base focus:outline-none focus:border-coral-600 focus:ring-2 focus:ring-coral-600/20 transition-colors duration-200">
+            <p id="error-name" class="mt-1.5 text-sm text-coral-700 hidden" role="alert"></p>
+          </div>
+
+          <div>
+            <label for="field-phone" class="block text-sm font-bold text-ink mb-1.5">
+              Teléfono / WhatsApp <span class="text-coral-600">*</span>
+            </label>
+            <input type="tel" id="field-phone" name="phone" required autocomplete="tel" inputmode="tel"
+                   placeholder="Ej: 264 5551234"
+                   aria-describedby="error-phone"
+                   class="w-full min-h-[44px] px-4 py-3 rounded-xl border border-coral-100 text-base focus:outline-none focus:border-coral-600 focus:ring-2 focus:ring-coral-600/20 transition-colors duration-200">
+            <p id="error-phone" class="mt-1.5 text-sm text-coral-700 hidden" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5 mb-5">
+          <div>
+            <label for="field-email" class="block text-sm font-bold text-ink mb-1.5">
+              Email <span class="text-ink-muted font-normal">(opcional)</span>
+            </label>
+            <input type="email" id="field-email" name="email" autocomplete="email" inputmode="email"
+                   aria-describedby="error-email"
+                   class="w-full min-h-[44px] px-4 py-3 rounded-xl border border-coral-100 text-base focus:outline-none focus:border-coral-600 focus:ring-2 focus:ring-coral-600/20 transition-colors duration-200">
+            <p id="error-email" class="mt-1.5 text-sm text-coral-700 hidden" role="alert"></p>
+          </div>
+
+          <div>
+            <label for="field-category" class="block text-sm font-bold text-ink mb-1.5">
+              Tipo de consulta
+            </label>
+            <select id="field-category" name="category"
+                    class="w-full min-h-[44px] px-4 py-3 rounded-xl border border-coral-100 text-base bg-white focus:outline-none focus:border-coral-600 focus:ring-2 focus:ring-coral-600/20 transition-colors duration-200">
+              <option value="">Elegí un motivo (opcional)</option>
+              <option value="Perros y Gatos">Perros y Gatos</option>
+              <option value="Animales de Granja">Animales de Granja</option>
+              <option value="Acuarismo">Acuarismo</option>
+              <option value="Mascotas Exóticas">Mascotas Exóticas</option>
+              <option value="Envíos">Envíos</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-5">
+          <label for="field-message" class="block text-sm font-bold text-ink mb-1.5">
+            Mensaje <span class="text-coral-600">*</span>
+          </label>
+          <textarea id="field-message" name="message" required rows="4"
+                    aria-describedby="error-message"
+                    class="w-full px-4 py-3 rounded-xl border border-coral-100 text-base focus:outline-none focus:border-coral-600 focus:ring-2 focus:ring-coral-600/20 transition-colors duration-200"></textarea>
+          <p id="error-message" class="mt-1.5 text-sm text-coral-700 hidden" role="alert"></p>
+        </div>
+
+        <div class="mb-6">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="field-privacy" name="privacy" required
+                   aria-describedby="error-privacy"
+                   class="mt-1 w-5 h-5 shrink-0 rounded border-coral-200 text-coral-600 focus:ring-coral-600/30 cursor-pointer">
+            <label for="field-privacy" class="text-sm text-ink-muted cursor-pointer">
+              Acepto la <a href="politica-de-privacidad.html" target="_blank" rel="noopener"
+                           class="text-turquoise-800 font-semibold hover:underline">Política de Privacidad</a>
+              <span class="text-coral-600">*</span>
+            </label>
+          </div>
+          <p id="error-privacy" class="mt-1.5 text-sm text-coral-700 hidden" role="alert"></p>
+        </div>
+
+        <div role="status" aria-live="polite" tabindex="-1" id="contact-success"
+             class="hidden mb-6 flex items-start gap-3 bg-lime-50 border border-lime-200 text-lime-800 rounded-xl p-4">
+          <i class="ph-fill ph-check-circle text-xl shrink-0 mt-0.5" aria-hidden="true"></i>
+          <p class="font-semibold">¡Gracias! Te vamos a responder a la brevedad.</p>
+        </div>
+
+        <div role="alert" aria-live="assertive" tabindex="-1" id="contact-error"
+             class="hidden mb-6 flex items-start gap-3 bg-coral-50 border border-coral-200 text-coral-700 rounded-xl p-4">
+          <i class="ph-fill ph-warning-circle text-xl shrink-0 mt-0.5" aria-hidden="true"></i>
+          <p class="font-semibold">
+            No pudimos enviar tu consulta. Probá de nuevo en un momento o
+            <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+               class="underline cursor-pointer">escribinos directo por WhatsApp</a>.
+          </p>
+        </div>
+
+        <button type="submit" id="contact-submit"
+                class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-coral-600 hover:bg-coral-700 text-white font-bold px-8 py-3.5 rounded-full shadow-soft-md hover:shadow-soft-lg transition-all duration-200 hover:-translate-y-0.5 cursor-pointer min-h-[44px] disabled:opacity-70 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+          <i class="ph ph-spinner-gap text-xl animate-spin hidden" id="contact-spinner" aria-hidden="true"></i>
+          <span id="contact-submit-label">Enviar consulta</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink text-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div>
+      <img src="assets/logo.png" alt="Logo de Cuchín Pet Shop" loading="lazy" class="h-10 w-auto mb-4 bg-white rounded-lg px-2 py-1">
+      <p class="text-white/70 text-sm max-w-xs">
+        Todo para tu mascota, con asesoramiento personalizado desde 2020.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="font-heading text-lg mb-3">Contacto</h3>
+      <ul class="space-y-2 text-sm text-white/80">
+        <li class="flex items-center gap-2">
+          <i class="ph-fill ph-map-pin text-coral-300" aria-hidden="true"></i>
+          Vidart y Calle 6, Pocito, San Juan
+        </li>
+        <li>
+          <a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+             class="flex items-center gap-2 hover:text-white transition-colors duration-200 cursor-pointer">
+            <i class="ph-fill ph-whatsapp-logo text-coral-300" aria-hidden="true"></i>
+            +54 264 628-7887
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-heading text-lg mb-3">Seguinos</h3>
+      <div class="flex gap-3">
+        <a href="https://www.instagram.com/cuchinpetshop/" aria-label="Instagram de Cuchín Pet Shop"
+           class="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 cursor-pointer">
+          <i class="ph-fill ph-instagram-logo text-xl" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/cuchinpetshop/" aria-label="Facebook de Cuchín Pet Shop"
+           class="w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors duration-200 cursor-pointer">
+          <i class="ph-fill ph-facebook-logo text-xl" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 pt-5 pb-8 text-center text-xs text-white/70 space-y-3">
+    <nav aria-label="Enlaces legales" class="flex justify-center gap-3 text-xs text-white/80">
+      <a href="politica-de-privacidad.html" class="hover:text-white hover:underline cursor-pointer">Política de Privacidad</a>
+      <span aria-hidden="true">·</span>
+      <a href="terminos-y-condiciones.html" class="hover:text-white hover:underline cursor-pointer">Términos y Condiciones</a>
+    </nav>
+    <div class="space-y-1">
+      <p>© 2026 Cuchín Pet Shop. Todos los derechos reservados.</p>
+      <p class="text-[11px] text-white/70">
+        Desarrollado por
+        <a href="https://sanjuancloud.com.ar" target="_blank" rel="noopener"
+           class="text-white/90 hover:text-white hover:underline transition-colors duration-200 cursor-pointer">San Juan Cloud</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ BOTÓN FLOTANTE DE WHATSAPP ============ -->
+<a href="https://wa.me/542646287887?text=Hola%2C%20Cuch%C3%ADn%20Pet%20Shop%21%20Quiero%20hacer%20una%20consulta."
+   aria-label="Contactar por WhatsApp"
+   class="whatsapp-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-coral-600 hover:bg-coral-700 text-white flex items-center justify-center shadow-soft-lg transition-colors duration-200 cursor-pointer">
+  <i class="ph-fill ph-whatsapp-logo text-3xl relative" aria-hidden="true"></i>
+</a>
+
+</body>
+</html>

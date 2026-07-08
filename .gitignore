@@ -1,0 +1,5 @@
+# Herramientas internas de trabajo (no forman parte del sitio en producción)
+.claude/
+CLAUDE.md
+design-system/
+assets/img/README.md

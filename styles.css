@@ -1,0 +1,41 @@
+html { scroll-behavior: smooth; }
+body { font-family: 'Nunito Sans', sans-serif; }
+h1, h2, h3, .font-heading { font-family: 'Varela Round', sans-serif; }
+
+/* Placeholder ilustrado para fotos que todavía no existen (assets/img/) */
+.photo-slot { position: relative; overflow: hidden; }
+.photo-slot__placeholder {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem;
+  background: linear-gradient(135deg, #FCDFE3 0%, #E3F5F7 55%, #F1F7E4 100%);
+  color: #AF132B;
+  text-align: center;
+  padding: 1rem;
+}
+.photo-slot__img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes soft-pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(212,23,53,0.35); }
+  100% { box-shadow: 0 0 0 16px rgba(212,23,53,0); }
+}
+.whatsapp-float::before {
+  content: "";
+  position: absolute; inset: 0; border-radius: 9999px;
+  animation: soft-pulse-ring 1.8s ease-out 2;
+}
+
+:focus-visible {
+  outline: 3px solid #D41735;
+  outline-offset: 2px;
+}
