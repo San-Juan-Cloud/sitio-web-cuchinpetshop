@@ -53,10 +53,8 @@
 <!-- Íconos: Phosphor Icons (fill/duotone), según design-system/MASTER.md #3. defer: son decorativos, no deben bloquear el render inicial. -->
 <script src="https://unpkg.com/@phosphor-icons/web" defer></script>
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="main.js"></script>
-
 <link rel="stylesheet" href="styles.css">
+<script src="main.js" defer></script>
 
 <!-- Datos estructurados schema.org: reemplazar DOMINIO-AQUI.com.ar al publicar. -->
 <script type="application/ld+json">
@@ -531,7 +529,7 @@
         </a>
       </div>
 
-      <div class="rounded-3xl overflow-hidden shadow-soft-lg aspect-[4/3] lg:aspect-auto lg:h-full min-h-[320px]">
+      <div class="rounded-3xl overflow-hidden shadow-soft-lg aspect-[4/3] lg:aspect-auto lg:h-full lg:min-h-[320px]">
         <iframe
           src="https://www.google.com/maps?q=-31.5932,-68.5682&z=16&output=embed"
           title="Mapa de ubicación de Cuchín Pet Shop en Pocito, San Juan"

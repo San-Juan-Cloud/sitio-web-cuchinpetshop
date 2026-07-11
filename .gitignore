@@ -3,3 +3,6 @@
 CLAUDE.md
 design-system/
 assets/img/README.md
+
+# Build de Tailwind (styles.css se genera con `npm run build:css` y sí se versiona)
+node_modules/
