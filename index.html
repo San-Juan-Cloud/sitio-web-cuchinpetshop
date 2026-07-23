@@ -417,15 +417,19 @@
   </section>
 
   <!-- ============ BANDA DIVISORIA ============ -->
-  <!-- FOTO: local-interior.jpg — recomendado 1600x900px (16:9). Interior del local, idealmente con un cliente siendo atendido. -->
-  <section class="photo-slot aspect-[21/9] sm:aspect-[21/7]">
-    <div class="photo-slot__placeholder" style="background: linear-gradient(120deg, #FCDFE3 0%, #E3F5F7 50%, #F1F7E4 100%);">
-      <p class="font-heading text-xl sm:text-2xl text-coral-700 max-w-lg">
-        Más de 5 años acompañando a las familias de Pocito
-      </p>
+  <!-- FOTO: local-interior.jpg — foto completa del interior del local (sin recortar), formato vertical. -->
+  <section class="py-10 sm:py-14 bg-gradient-to-br from-coral-50 via-white to-turquoise-50">
+    <div class="max-w-sm sm:max-w-md mx-auto px-4 sm:px-6">
+      <div class="photo-slot rounded-3xl shadow-soft-lg aspect-[3/4] w-full">
+        <div class="photo-slot__placeholder" style="background: linear-gradient(120deg, #FCDFE3 0%, #E3F5F7 50%, #F1F7E4 100%);">
+          <p class="font-heading text-xl sm:text-2xl text-coral-700 max-w-lg">
+            Más de 5 años acompañando a las familias de Pocito
+          </p>
+        </div>
+        <img class="photo-slot__img" loading="lazy" src="assets/img/local-interior.jpg"
+             alt="Interior del local de Cuchín Pet Shop en Pocito, San Juan" onerror="this.style.display='none'">
+      </div>
     </div>
-    <img class="photo-slot__img" loading="lazy" src="assets/img/local-interior.jpg"
-         alt="Interior del local de Cuchín Pet Shop en Pocito, San Juan" onerror="this.style.display='none'">
   </section>
 
   <!-- ============ TESTIMONIOS ============ -->
